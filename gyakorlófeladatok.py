@@ -114,11 +114,10 @@ def f11():
 def f12():
     n = int(input("Kérem a jegyet: "))
     jegy = (n+n)
-    atlag = jegy
     while n != 0:
         n = int(input("Kérem a jegyet: "))
         if n == 0:
-            print(atlag)
+            print(jegy)
 
 def main():
     #f1()
