@@ -1,7 +1,7 @@
 import random
-from re import S
-from socket import INADDR_ALLHOSTS_GROUP
-"""
+from re import T
+
+
 veletlenszam= random.randint(0,10)
 print(veletlenszam)
 
@@ -23,7 +23,7 @@ for i in range(4):
     print(veletlenszam)
 
 
-Második feladat
+"Második feladat"
 
 print("---------------------")
 
@@ -36,10 +36,6 @@ while (tipp != fejvagyiras):
     fejvagyiras=random.randint(0,1)
     tipp=int(input="Nem talált. Adjon meg egy új számot: ")
     print("Gratulálok! Eltaláltad!")
-
-for a in szoveg or betu:
-    print(szoveg+betu)
-
 
 
 szam= int(input("szám: "))
@@ -67,7 +63,7 @@ while(i!=0):
     i=i-1
 print(s)
 
-"""
+
 
 a=int(input("a= "))
 b=int(input("b= "))
@@ -118,3 +114,92 @@ while s>=5:
     s-=5
     c+=1
 print(f"{c}db 5Ft")
+
+
+while True:
+    n=int(input("Kérek egy számot: "))
+    if(n%2==0):
+        print("A megadott szám megfelelő")
+        break
+
+
+while True:
+    n=int(input("Kérek egy számot: "))
+    if(n>0):
+        print(n%5)
+        break
+
+
+
+while True:
+    n=int(input("Kérek egy számot 1-7 között: "))
+    if(1<=n<=7):
+        if(n==1):
+            print("hétfő")
+        elif(n==2):
+            print("kedd")
+        elif(n==3):
+            print("szerda")
+        elif(n==4):
+            print("csütörtök")
+        elif(n==5):
+            print("péntek")
+        elif(n==6):
+            print("szombat")
+        else:
+            print("vasárnap")
+        break
+
+
+while True:
+    n=int(input("Kérek egy számot: "))
+    if(n>0 or n%2==0):
+        print("Hiba!")
+    else:
+        break
+
+while True:
+    n=int(input("Kérek egy számot: "))
+    if(n%3==0 and n%5==0):
+        print(n/3, n/5, sep=' ')
+        break
+
+while True:
+    n=int(input("Kérek egy számot: "))
+    if(n==0):
+        break
+    else:
+        print(n%5)
+
+
+
+
+while True:
+    a=int(input("a: "))
+    b=int(input("b: "))
+    if(a==b):
+        break
+    elif(a>b):
+        print("a nagyobb mint b")
+    else:
+        print("b nagyobb mint a")
+
+
+while True:
+    n=random.randint(1,12)
+    print(n, n%3, sep=' ')
+    m=chr(ord(input("Új szám? (i/n) ")))
+    if m=='n':
+        break
+
+n=random.randint(1,50)
+
+
+while True:
+    tipp=int(input("Tipp: "))
+    if(tipp==n):
+        break
+    elif(tipp<n):
+        print("A gondolt szám nagyobb")
+    else:
+        print("A gondolt szám kissebb")
