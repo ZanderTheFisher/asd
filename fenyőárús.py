@@ -1,5 +1,5 @@
 def beolvas():
-    f = open("9zfenyo.txt","r",encoding="UTF-8")
+    f = open("fenyoarus.csv","r",encoding="UTF-8")
     lista = []
     for item in f:
         lista.append(item.strip())
@@ -18,11 +18,9 @@ def kiir(lista):
     for item in lista:
         print(item)
 
-
 def main():
     lista=beolvas()
     kiir(lista)
     print("1.: " , len(lista))
     osszead(lista)
-
 main()
